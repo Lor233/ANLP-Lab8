@@ -1,0 +1,4 @@
+transformers
+spacy==3.0
+scikit-learn
+pyconll
