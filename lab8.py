@@ -201,7 +201,8 @@ def print_classifier_stats(predictions: List[str], labels: List[str], classes: L
     print("Classification Report:")
     print(metrics.classification_report(labels, predictions, target_names=classes, zero_division=0))
     # TODO currently get a broadcast error, fix ValueError: shape mismatch: objects cannot be broadcast to a single shape
-    # print("Confusion Matrix:")
+    print("Confusion Matrix:")
+    print(metrics.confusion_matrix(predictions, labels, labels=classes))
     # print(metrics.confusion_matrix(test_labels_, predictions_, labels=[label_encoder.classes_]))
 
 
